@@ -1,0 +1,7 @@
+{
+  "name": "illcity",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
