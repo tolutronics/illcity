@@ -1,0 +1,103 @@
+
+
+<ion-content color="tertiary">
+
+    <h4>Create Account</h4>
+
+    <ion-segment (ionChange)="segmentChanged()" [(ngModel)]="segment" color="primary">
+      <ion-segment-button value="0">
+        <ion-label>USER</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="1">
+       <ion-label>DRIVER</ion-label>
+      </ion-segment-button>
+  
+    </ion-segment>
+
+    <ion-slides #slides (ionSlideDidChange)="slideChanged()" scrollbar="true">
+        <ion-slide>
+
+            <ion-item>
+                <ion-label  style="font-size:12px" position="floating">Email</ion-label>
+                <ion-input type="email"></ion-input>
+              </ion-item>
+        
+              <ion-item>
+                  <ion-label style="font-size:12px"  position="floating">Last Name</ion-label>
+                  <ion-input type="text"></ion-input>
+                </ion-item>
+        
+                <ion-item>
+                    <ion-label style="font-size:12px"  position="floating">First Name</ion-label>
+                    <ion-input type="text"></ion-input>
+                  </ion-item>
+        
+                  <ion-item>
+                      <ion-label style="font-size:12px"  position="floating">Phone Number</ion-label>
+                      <ion-input type="number"></ion-input>
+                    </ion-item>
+        
+                    <ion-item>
+                        <ion-label style="font-size:12px"  position="floating">Password</ion-label>
+                        <ion-input type="password"></ion-input>
+                      </ion-item>
+                      <ion-item>
+                          <ion-label style="font-size:12px"  position="floating">Confirm Password</ion-label>
+                          <ion-input type="password"></ion-input>
+                        </ion-item>
+        
+                        <ion-item class="terms">
+                          <ion-checkbox slot="start" style="margin-left: 1px;"></ion-checkbox>
+                          <ion-label style="font-size:10px; margin-right: 10px;" >I have read and agree with the terms and conditions</ion-label>
+                        </ion-item>
+        
+                        <ion-button>REGISTER</ion-button>
+                        <h5 (click)="login()">Already have an account? Login</h5>
+          </ion-slide>
+          <ion-slide>
+
+            
+            <ion-item>
+              <ion-label  style="font-size:12px" position="floating">Email</ion-label>
+              <ion-input type="email"></ion-input>
+            </ion-item>
+      
+            <ion-item>
+                <ion-label style="font-size:12px"  position="floating">Last Name</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+      
+              <ion-item>
+                  <ion-label style="font-size:12px"  position="floating">First Name</ion-label>
+                  <ion-input type="text"></ion-input>
+                </ion-item>
+      
+                <ion-item>
+                    <ion-label style="font-size:12px"  position="floating">Phone Number</ion-label>
+                    <ion-input type="number"></ion-input>
+                  </ion-item>
+      
+                  <ion-item>
+                      <ion-label style="font-size:12px"  position="floating">Password</ion-label>
+                      <ion-input type="password"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label style="font-size:12px"  position="floating">Confirm Password</ion-label>
+                        <ion-input type="password"></ion-input>
+                      </ion-item>
+      
+                      <ion-item class="terms">
+                        <ion-checkbox slot="start" style="margin-left: 1px;"></ion-checkbox>
+                        <ion-label style="font-size:10px; margin-right: 10px;" >I have read and agree with the terms and conditions</ion-label>
+                      </ion-item>
+      
+                      <ion-button>REGISTER</ion-button>
+                      <h5 (click)="login()">Already have an account? Login</h5>
+          </ion-slide>
+    </ion-slides>
+
+   
+
+
+
+</ion-content>
