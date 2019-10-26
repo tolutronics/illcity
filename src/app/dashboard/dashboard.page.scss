@@ -1,16 +1,12 @@
-p{
+span{
         display: flex;
         justify-content: center;
 }
 
-ion-button{
-    margin-left: auto;
-    margin-top: 50px;
-    display: block;
-    width: 30%;
-    height: 50px;
-    padding: 5px;
+ion-item{
+    padding: 10px;
 }
+
 .swiper-slide {
     display: block;
       -ms-flex-negative: 0;
@@ -33,3 +29,18 @@ ion-button{
       align-items: center;
       text-align: center;
   }
+
+p{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+ion-radio{
+    margin-top: -3px;
+    margin-left: 10px;
+}
+
+.to{
+    margin-right: 20px;
+}

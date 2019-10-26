@@ -31,8 +31,11 @@
     "@ionic/angular": "^4.7.1",
     "angularfire2": "^5.2.1",
     "cordova-android": "8.1.0",
-    "cordova-plugin-camera": "4.1.0",
+    "cordova-plugin-androidx": "1.0.2",
+    "cordova-plugin-androidx-adapter": "^1.1.0",
     "cordova-plugin-dialogs": "2.0.2",
+    "cordova-plugin-fcm-with-dependecy-updated": "4.0.1",
+    "cordova-plugin-firebase-lib": "5.1.1",
     "core-js": "^2.5.4",
     "firebase": "^7.2.2",
     "rxjs": "~6.5.1",
@@ -83,7 +86,16 @@
       "cordova-plugin-ionic-webview": {
         "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
       },
-      "cordova-plugin-ionic-keyboard": {}
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-androidx": {},
+      "cordova-plugin-androidx-adapter": {},
+      "cordova-plugin-firebase-lib": {},
+      "cordova-plugin-fcm-with-dependecy-updated": {
+        "FCM_CORE_VERSION": "16.0.9",
+        "FCM_VERSION": "18.0.0",
+        "GRADLE_TOOLS_VERSION": "3.5.0",
+        "GOOGLE_SERVICES_VERSION": "4.2.0"
+      }
     },
     "platforms": [
       "android"

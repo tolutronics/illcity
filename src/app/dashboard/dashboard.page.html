@@ -10,7 +10,7 @@
 <ion-content>
 <h3 class="ion-padding">Hello {{Name}}!</h3>
 
-<p>Pick a Ride...</p> 
+<span>Pick a Ride...</span> 
 
 <!-- <ion-item lines="none">
   <ion-button (click)="Sunilorin()">UNILORIN</ion-button>
@@ -33,17 +33,128 @@
 
 <ion-slides #slides (ionSlideDidChange)="slideChanged()" scrollbar="true">
     <ion-slide>
+        <ion-radio-group>
+            <ion-list-header>
+              Current Location
+            </ion-list-header>
+            <ion-item>
+                <p slot="start">Unilorin
+                   <ion-radio  value="Unilorin"></ion-radio>
+                  </p>
+              
+             
+                <p slot="end" class="to">Others
+                  <ion-radio value="Others"></ion-radio>
+                </p>
+              
+              </ion-item>
+          </ion-radio-group>
+
+          <ion-radio-group>
+              <ion-list-header>
+                Destination Location
+              </ion-list-header>
+              <ion-item>
+                <p slot="start">Unilorin
+                   <ion-radio  value="Unilorin"></ion-radio>
+                  </p>
+              
+             
+                <p slot="end" class="to">Others
+                  <ion-radio value="Others"></ion-radio>
+                </p>
+              
+              </ion-item>
+            </ion-radio-group>
+            <ion-button expand="full">PLACE ORDER @ NGN 700</ion-button>
       </ion-slide>
 
       <ion-slide>
 
           <ion-item>
-              <ion-label style="font-size:12px"  position="floating">Number OF Children</ion-label>
+              <ion-label style="font-size:12px"  position="floating">Number of Children</ion-label>
               <ion-input type="number"></ion-input>
             </ion-item>
+          
+            <ion-radio-group>
+            
+                <ion-item>
+                  <p slot="start">From School
+                     <ion-radio  value="From School"></ion-radio>
+                    </p>
+                
+               
+                  <p slot="end" class="to">To School 
+                    <ion-radio value="To School"></ion-radio>
+                  </p>
+                
+                </ion-item>
+              </ion-radio-group>
+
+            <ion-item>
+              <ion-label style="font-size:12px"  position="floating">Number of Children</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label style="font-size:12px"  position="floating">Number of Children</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label style="font-size:12px"  position="floating">Number of Children</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-radio-group>
+            
+                <ion-item>
+                  <p slot="start">On-time Pick up
+                     <ion-radio  value="On-time"></ion-radio>
+                    </p>
+                
+               
+                  <p slot="end" class="to">Regular Pick up 
+                    <ion-radio value="Regular"></ion-radio>
+                  </p>
+                
+                </ion-item>
+              </ion-radio-group>
+              <ion-button expand="full">PLACE ORDER</ion-button>
         </ion-slide>
         
         <ion-slide>
+            <ion-radio-group>
+                <ion-list-header>
+                  Current Location
+                </ion-list-header>
+                <ion-item>
+                    <p slot="start">Unilorin
+                       <ion-radio  value="Unilorin"></ion-radio>
+                      </p>
+                  
+                 
+                    <p slot="end" class="to">Others
+                      <ion-radio value="Others"></ion-radio>
+                    </p>
+                  
+                  </ion-item>
+              </ion-radio-group>
+    
+              <ion-radio-group>
+                  <ion-list-header>
+                    Destination Location
+                  </ion-list-header>
+                  <ion-item>
+                    <p slot="start">Unilorin
+                       <ion-radio  value="Unilorin"></ion-radio>
+                      </p>
+                  
+                 
+                    <p slot="end" class="to">Others
+                      <ion-radio value="Others"></ion-radio>
+                    </p>
+                  
+                  </ion-item>
+                </ion-radio-group>
+                <ion-button expand="full">PLACE ORDER</ion-button>
           </ion-slide>
 </ion-slides>
 </ion-content>
