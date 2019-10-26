@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Dialogs } from '@ionic-native/dialogs/ngx';
-import { DialogComponent } from '../dialog/dialog.component';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
+import { NavController, AlertController, IonSlides} from '@ionic/angular';
 
 
 @Component({
@@ -9,35 +9,20 @@ import { DialogComponent } from '../dialog/dialog.component';
   styleUrls: ['./dashboard.page.scss'],
 })
 export class DashboardPage implements OnInit {
-unilorin:boolean=false;
-children:boolean=false;
-town:boolean=false;
-  constructor(public dialog:Dialogs,) { }
+  @ViewChild('slides', {static:true}) slider: IonSlides;
+  segment = 0;
+  SwipedTabsIndicator :any= null;
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
 
-  Sunilorin(){
-    this.unilorin=true;
-    this.children=false;
-    this.town=false;
-
+  async segmentChanged() {
+    await this.slider.slideTo(this.segment);
   }
 
-  Schildren(){
-    this.children=true;
-    this.unilorin=false;
-    this.town=false;
-
-  }
-
-
-  Stown(){
-
-    this.town=true;
-    this.unilorin=false;
-    this.children=false;
-
+  async slideChanged() {
+    this.segment = await this.slider.getActiveIndex();
   }
 
 }

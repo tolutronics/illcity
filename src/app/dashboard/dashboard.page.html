@@ -12,21 +12,38 @@
 
 <p>Pick a Ride...</p> 
 
-<ion-item lines="none">
+<!-- <ion-item lines="none">
   <ion-button (click)="Sunilorin()">UNILORIN</ion-button>
   <ion-button (click)="Schildren()">CHILDREN</ion-button>
   <ion-button (click)="Stown()">TOWN</ion-button>
-</ion-item>
+</ion-item> -->
 
-<div *ngIf="unilorin">
-  unilorin
-</div>
+<ion-segment (ionChange)="segmentChanged()" [(ngModel)]="segment" color="primary">
+  <ion-segment-button value="0">
+    <ion-label>UNILORIN</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="1">
+   <ion-label>CHILDREN</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="2">
+    <ion-label>TOWN</ion-label>
+   </ion-segment-button>
 
-<div *ngIf="children">
-    children
-  </div>
+</ion-segment>
 
-  <div *ngIf="town">
-      town
-    </div>
+<ion-slides #slides (ionSlideDidChange)="slideChanged()" scrollbar="true">
+    <ion-slide>
+      </ion-slide>
+
+      <ion-slide>
+
+          <ion-item>
+              <ion-label style="font-size:12px"  position="floating">Number OF Children</ion-label>
+              <ion-input type="number"></ion-input>
+            </ion-item>
+        </ion-slide>
+        
+        <ion-slide>
+          </ion-slide>
+</ion-slides>
 </ion-content>
