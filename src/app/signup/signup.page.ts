@@ -27,4 +27,8 @@ export class SignupPage implements OnInit {
     this.segment = await this.slider.getActiveIndex();
   }
 
+  confirm(){
+    this.router.navigate(['/confirmation'])
+  }
+
 }

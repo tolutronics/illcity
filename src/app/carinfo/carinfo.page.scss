@@ -1,17 +1,26 @@
-ion-input{
-    border-radius: 5px;
-    border: 1px solid #E65100;
+ion-item{
+    --ion-background-color: transparent;
+    color: #3f3d3d;
     width: 80%;
-    margin-top: 60%;
-    margin-right: auto;
-    margin-left: auto;
     display: block;
-    height: 50px;
-    color: #1b1b1b;
+    margin:auto;
+    border: none;
+}
+ion-label{
+    --ion-font-size: 10px;
+}
+.terms{
+    width:90%;
+}
+
+ion-input{
+  
+    color: #3f3d3d;
 }
 
 h5{
     display: flex;
+    color:#3f3d3d ;
     font-size: 12px;
     justify-content: center;
 }

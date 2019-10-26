@@ -1,0 +1,28 @@
+
+
+<ion-content>
+
+<h4>Upload Photo</h4>
+   <img src="{{PhotoUrl}}">
+   <ion-button class="choose" (click)="toGallery()"> {{btnText}} </ion-button>
+   <br><br><br>
+
+   <ion-item>
+      <ion-label  style="font-size:12px" position="floating">Mode of Identification(NIN/BVN)</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label style="font-size:12px"  position="floating">Driver's License</ion-label>
+        <ion-input type="number"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label style="font-size:12px"  position="floating">Expiry date</ion-label>
+          <ion-input type="date"></ion-input>
+        </ion-item>
+
+        <ion-button class="next" (click)="next()">NEXT</ion-button>
+
+
+</ion-content>
