@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'confirmation', loadChildren: './confirmation/confirmation.module#ConfirmationPageModule' },
   { path: 'upload-photo', loadChildren: './upload-photo/upload-photo.module#UploadPhotoPageModule' },
   { path: 'carinfo', loadChildren: './carinfo/carinfo.module#CarinfoPageModule' },
+  { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardPageModule' },
 ];
 
 @NgModule({

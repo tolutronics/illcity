@@ -14,11 +14,12 @@ import { AngularFireDatabase, AngularFireDatabaseModule } from '@angular/fire/da
 import { AngularFireStorage, AngularFireStorageModule } from '@angular/fire/storage';
 import { FormsModule } from '@angular/forms';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { Dialogs } from '@ionic-native/dialogs/ngx';
 firebase.initializeApp(environment.firebase);
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule,  IonicModule.forRoot(), AppRoutingModule,FormsModule,AngularFireDatabaseModule,
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,FormsModule,AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,AngularFireStorageModule],
   providers: [
@@ -27,6 +28,7 @@ firebase.initializeApp(environment.firebase);
     AngularFireStorage,
     SplashScreen,
     Camera,
+    Dialogs,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

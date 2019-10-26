@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start" class="menu">
+          <ion-menu-button autoHide="false"></ion-menu-button>
+        </ion-buttons>
+    <ion-title>ILCITY</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<h3 class="ion-padding">Hello {{Name}}!</h3>
+
+<p>Pick a Ride...</p> 
+
+<ion-item lines="none">
+  <ion-button (click)="Sunilorin()">UNILORIN</ion-button>
+  <ion-button (click)="Schildren()">CHILDREN</ion-button>
+  <ion-button (click)="Stown()">TOWN</ion-button>
+</ion-item>
+
+<div *ngIf="unilorin">
+  unilorin
+</div>
+
+<div *ngIf="children">
+    children
+  </div>
+
+  <div *ngIf="town">
+      town
+    </div>
+</ion-content>
